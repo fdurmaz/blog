@@ -9,22 +9,26 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
-                {% for blog in blogs %}
-                    <div class="post-preview">
-                        <a href="{% url 'detail' blog.id %}">
-                            <h2 class="post-title">
-                                {{ blog.title }}
-                            </h2>
-                            <h3 class="post-subtitle">
-                                {{ blog.text|truncatechars:58 }}
-                            </h3>
-                        </a>
-                        <p class="post-meta">Posted by
-                            <a href="#">Furkan Durmaz</a>
-                            on {{ blog.created_date|date:"d F Y - H:i" }}</p>
-                    </div>
-                    <hr>
-                {% endfor %}
+                {% if blogs %}
+                    {% for blog in blogs %}
+                        <div class="post-preview">
+                            <a href="{% url 'detail' blog.id %}">
+                                <h2 class="post-title">
+                                    {{ blog.title }}
+                                </h2>
+                                <h3 class="post-subtitle">
+                                    {{ blog.text|truncatechars:58 }}
+                                </h3>
+                            </a>
+                            <p class="post-meta">Posted by
+                                <a href="#">Furkan Durmaz</a>
+                                on {{ blog.created_date|date:"d F Y - H:i" }}</p>
+                        </div>
+                        <hr>
+                    {% endfor %}
+                {% else %}
+                    <p>Blog not found.</p>
+                {% endif %}
 
                 <!-- Pager -->
             </div>
