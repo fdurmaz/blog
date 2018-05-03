@@ -3,12 +3,14 @@
 {% block content %}
     <div class="container">
         <div class="row">
-
             <div class="col-lg-8 col-md-10 mx-auto">
                 {% for category in categories %}
-                    <button class="btn btn-dark btn-sm" style="margin-bottom: 10px; border-radius: 0 15px 15px 15px ;" disabled>
-                        {{ category.title }}
-                    </button>
+                    <a href="{% url 'index' %}?category={{ category.id }}">
+                        <button class="btn btn-dark btn-sm"
+                                style="margin-bottom: 10px; border-radius: 0 15px 15px 15px ;">
+                            {{ category.title }}
+                        </button>
+                    </a>
                 {% endfor %}
                 <div class="post-preview">
                     <h2 class="post-title">

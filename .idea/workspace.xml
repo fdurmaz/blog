@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1cc2b0a2-ec2c-40c1-9d83-cb201d172175" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/blogs/static/blogs/css/clean-blog.css" afterPath="$PROJECT_DIR$/blogs/static/blogs/css/clean-blog.css" />
       <change beforePath="$PROJECT_DIR$/blogs/templates/blogs/detail.html" afterPath="$PROJECT_DIR$/blogs/templates/blogs/detail.html" />
-      <change beforePath="$PROJECT_DIR$/blogs/templates/blogs/index.html" afterPath="$PROJECT_DIR$/blogs/templates/blogs/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -301,7 +299,14 @@
       <option name="project" value="LOCAL" />
       <updated>1525077290637</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add a functionality that shows the chosen category as Bold text. If you click 'All', that will show up as bold as well.">
+      <created>1525348645945</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1525348645945</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -344,7 +349,8 @@
     <MESSAGE value="Optimize imports" />
     <MESSAGE value="Delete redundant button" />
     <MESSAGE value="Add a functionality that shows 'Blogs not found.' when there are no Blogs attached to a Category." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add a functionality that shows 'Blogs not found.' when there are no Blogs attached to a Category." />
+    <MESSAGE value="Add a functionality that shows the chosen category as Bold text. If you click 'All', that will show up as bold as well." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add a functionality that shows the chosen category as Bold text. If you click 'All', that will show up as bold as well." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -498,6 +504,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -505,6 +512,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="48" lean-forward="false" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -524,6 +532,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -620,6 +629,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
