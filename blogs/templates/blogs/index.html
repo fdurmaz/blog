@@ -27,8 +27,9 @@
                         <hr>
                     {% endfor %}
                 {% else %}
-                    <p>Blog not found.</p>
+                    <p>No blogs found.</p>
                 {% endif %}
+
 
                 <!-- Pager -->
             </div>
@@ -40,11 +41,13 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-lg-6">
-                                <a href="/">All</a>
+                                <a href="/" {% if request.GET.category == null %} class="font-weight-bold"{% endif %}>All</a>
                                 {% for category in categories %}
                                     <ul class="list-unstyled mb-0">
                                         <li>
-                                            <a href="?category={{ category.id }}">{{ category.title }}</a>
+                                            <a href="?category={{ category.id }}"
+                                                    {% if request.GET.category == category.id|slugify %}
+                                               class="font-weight-bold"{% endif %}> {{ category.title }}</a>
                                         </li>
                                     </ul>
                                 {% endfor %}
@@ -53,7 +56,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 

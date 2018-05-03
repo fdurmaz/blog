@@ -441,5 +441,5 @@ div.scrollThis [class*="span"] {
 }
 
 .dark {
-    color: darkblue;
+    font-weight: bold;
 }
