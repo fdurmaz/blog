@@ -11,7 +11,12 @@ class IndexView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super(IndexView, self).get_context_data(**kwargs)
 
-        blogs = Blog.objects.all().order_by('-created_date')
+        category = self.request.GET.get('category', None)
+
+        if category:
+            blogs = Blog.objects.filter(categories=category)
+        else:
+            blogs = Blog.objects.all().order_by('-created_date')
         categories = Category.objects.all()
 
         context.update({
@@ -43,3 +48,7 @@ class DetailView(TemplateView):
             'categories': self.blog.categories.all()
         })
         return context
+
+
+class FilterView(TemplateView):
+    template_name = 'blogs/filter.html'

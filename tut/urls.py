@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path
-from django.views.generic import TemplateView
-from blogs.views import IndexView, DetailView
+
+from blogs.views import IndexView, DetailView, FilterView
 
 urlpatterns = [
     path('detail/<int:blog_id>/', DetailView.as_view(), name='detail'),

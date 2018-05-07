@@ -439,3 +439,7 @@ div.scrollThis [class*="span"] {
     display: inline-block;
     float: none;
 }
+
+.dark {
+    font-weight: bold;
+}
